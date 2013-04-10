@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: android | Tea Party Blog]]></title>
+  <link href="http://w517e-rabbit.github.com/blog/categories/android/atom.xml" rel="self"/>
+  <link href="http://w517e-rabbit.github.com/"/>
+  <updated>2013-04-11T00:39:17+09:00</updated>
+  <id>http://w517e-rabbit.github.com/</id>
+  <author>
+    <name><![CDATA[w517e rabbit]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Eclipseでのandroidフォーマット]]></title>
+    <link href="http://w517e-rabbit.github.com/blog/2013/04/11/android/"/>
+    <updated>2013-04-11T00:27:00+09:00</updated>
+    <id>http://w517e-rabbit.github.com/blog/2013/04/11/android</id>
+    <content type="html"><![CDATA[<p>何はともあれ、開発をするならフォーマットを統一しよう。
+・・・ということで、formatterのダウンロードを試みる。</p>
+
+<pre><code>$ git clone https://github.com/android/platform_development.git
+Cloning into 'platform_development'...
+error: error setting certificate verify locations:
+  CAfile: /usr/ssl/certs/ca-bundle.crt
+  CApath: none while accessing https://github.com/android/platform_development.git/info/refs
+fatal: HTTP request failed
+</code></pre>
+
+<p>いきなり、エラーだし。
+ググッたらca-certificatesを入れるらしい。
+Cygwinマジめんどくさい。[Net][ca-certificates]を選択してインストール。</p>
+
+<p>[platform_development/ide/eclipse/android-formatting.xml]と[platform_development/ide/eclipse/android.importorder]をゲット</p>
+
+<p>Eclipseの[ウィンドウ]-[設定]から[Java]-[コードスタイル]-[フォーマッター]から[android-formatting.xml]をインポート。</p>
+
+<p>Eclipseの[ウィンドウ]-[設定]から[Java]-[コードスタイル]-[インポートの編成]から[android.importorder]をインポート。</p>
+
+<p>ん？
+なんか知らない間にhttp://localhost:4000ではなくて、http://localhost:4000/blogでないとアクセスできないぞ。
+やっぱり、いまだにOctopressわからん。</p>
+
+<p>参考サイト</p>
+
+<p><a href="http://d.hatena.ne.jp/kakkun61/20121008/1349632271">http://d.hatena.ne.jp/kakkun61/20121008/1349632271</a></p>
+]]></content>
+  </entry>
+  
+</feed>
