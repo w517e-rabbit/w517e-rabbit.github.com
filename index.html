@@ -9,7 +9,7 @@
   <meta name="author" content="w517e rabbit">
 
   
-  <meta name="description" content="最近、仕事も落ち着いてきたし、いろいろ勉強しようとおもっていたが、技術者たるものアウトプットせねば・・・。と今更ながらに思った。ただ、htmlタグをバチバチ打ってホームページ作るなんてナンセンスだし、自分が学んだことが公開できつつ、Wikiみたいに蓄積するにはどうしたら良いのか迷走しながら、 &hellip;">
+  <meta name="description" content="デプロイ $ cat .ssh/id_rsa.pub [Edit Your Profile]を選択して、[SSH Keys] $ rake setup_github_pages リポジトリの入力を求められるので、適切に&#8221;git@github.com:your_username/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -65,6 +65,64 @@
     <div id="content">
       <div class="blog-index">
   
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/blog/2013/04/10/git/">Git</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-10T23:43:00+09:00" pubdate data-updated="true">Apr 10<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><h1>デプロイ</h1>
+
+<pre><code>$ cat .ssh/id_rsa.pub
+</code></pre>
+
+<p>[Edit Your Profile]を選択して、[SSH Keys]</p>
+
+<pre><code>$ rake setup_github_pages
+</code></pre>
+
+<p>リポジトリの入力を求められるので、適切に&#8221;git@github.com:your_username/your_username.github.com&#8221;の形式で入力する。</p>
+
+<pre><code>$ rake generate
+$ rake deploy
+</code></pre>
+
+<p>sshがないとか怒られるので、Cygwinのsetup.exeで[Net][openssh]をインストール
+再度、</p>
+
+<pre><code>$ rake deploy
+</code></pre>
+
+<p>成功したっぽい。</p>
+</div>
+  
+  
+
+
+    </article>
   
   
     <article>
@@ -257,6 +315,10 @@ Successfully uninstalled rake-0.9.6
     <section>
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/blog/2013/04/10/git/">git</a>
+      </li>
     
       <li class="post">
         <a href="/blog/blog/2013/04/06/git/">Gitでブログ</a>

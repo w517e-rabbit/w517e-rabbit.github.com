@@ -4,7 +4,7 @@
   <title><![CDATA[Tea Party Blog]]></title>
   <link href="http://w517e-rabbit.github.com/atom.xml" rel="self"/>
   <link href="http://w517e-rabbit.github.com/"/>
-  <updated>2013-04-10T01:02:03+09:00</updated>
+  <updated>2013-04-10T23:46:07+09:00</updated>
   <id>http://w517e-rabbit.github.com/</id>
   <author>
     <name><![CDATA[w517e rabbit]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[git]]></title>
+    <link href="http://w517e-rabbit.github.com/blog/2013/04/10/git/"/>
+    <updated>2013-04-10T23:43:00+09:00</updated>
+    <id>http://w517e-rabbit.github.com/blog/2013/04/10/git</id>
+    <content type="html"><![CDATA[<h1>デプロイ</h1>
+
+<pre><code>$ cat .ssh/id_rsa.pub
+</code></pre>
+
+<p>[Edit Your Profile]を選択して、[SSH Keys]</p>
+
+<pre><code>$ rake setup_github_pages
+</code></pre>
+
+<p>リポジトリの入力を求められるので、適切に&#8221;git@github.com:your_username/your_username.github.com&#8221;の形式で入力する。</p>
+
+<pre><code>$ rake generate
+$ rake deploy
+</code></pre>
+
+<p>sshがないとか怒られるので、Cygwinのsetup.exeで[Net][openssh]をインストール
+再度、</p>
+
+<pre><code>$ rake deploy
+</code></pre>
+
+<p>成功したっぽい。</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Gitでブログ]]></title>

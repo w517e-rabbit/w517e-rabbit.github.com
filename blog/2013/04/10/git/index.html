@@ -5,13 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Blog Archive - Tea Party Blog</title>
+  <title>git - Tea Party Blog</title>
   <meta name="author" content="w517e rabbit">
 
   
-  <meta name="description" content=" Blog Archive 2013 git
-Apr 10 2013 posted in git Gitでブログ
-Apr 06 2013 Recent Posts git Gitでブログ ">
+  <meta name="description" content="デプロイ $ cat .ssh/id_rsa.pub [Edit Your Profile]を選択して、[SSH Keys] $ rake setup_github_pages リポジトリの入力を求められるので、適切に&#8221;git@github.com:your_username/ &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ Apr 06 2013 Recent Posts git Gitでブログ ">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://w517e-rabbit.github.com/blog/archives">
+  <link rel="canonical" href="http://w517e-rabbit.github.com/blog/2013/04/10/git">
   <link href="/blog/favicon.png" rel="icon">
   <link href="/blog/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/blog/atom.xml" rel="alternate" title="Tea Party Blog" type="application/atom+xml">
@@ -66,45 +64,106 @@ Apr 06 2013 Recent Posts git Gitでブログ ">
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Blog Archive</h1>
+    
+      <h1 class="entry-title">Git</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-10T23:43:00+09:00" pubdate data-updated="true">Apr 10<span>th</span>, 2013</time>
+        
+      </p>
     
   </header>
-  
-  <div id="blog-archives">
 
 
+<div class="entry-content"><h1>デプロイ</h1>
 
-  
-  <h2>2013</h2>
+<pre><code>$ cat .ssh/id_rsa.pub
+</code></pre>
 
-<article>
-  
-<h1><a href="/blog/blog/2013/04/10/git/">git</a></h1>
-<time datetime="2013-04-10T23:43:00+09:00" pubdate><span class='month'>Apr</span> <span class='day'>10</span> <span class='year'>2013</span></time>
+<p>[Edit Your Profile]を選択して、[SSH Keys]</p>
 
-<footer>
-  <span class="categories">posted in <a class='category' href='/blog/blog/categories/git/'>git</a></span>
-</footer>
+<pre><code>$ rake setup_github_pages
+</code></pre>
 
+<p>リポジトリの入力を求められるので、適切に&#8221;git@github.com:your_username/your_username.github.com&#8221;の形式で入力する。</p>
 
-</article>
+<pre><code>$ rake generate
+$ rake deploy
+</code></pre>
 
+<p>sshがないとか怒られるので、Cygwinのsetup.exeで[Net][openssh]をインストール
+再度、</p>
 
+<pre><code>$ rake deploy
+</code></pre>
 
-<article>
-  
-<h1><a href="/blog/blog/2013/04/06/git/">Gitでブログ</a></h1>
-<time datetime="2013-04-06T00:53:00+09:00" pubdate><span class='month'>Apr</span> <span class='day'>06</span> <span class='year'>2013</span></time>
-
-
-</article>
-
+<p>成功したっぽい。</p>
 </div>
 
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">w517e rabbit</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-10T23:43:00+09:00" pubdate data-updated="true">Apr 10<span>th</span>, 2013</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/blog/categories/git/'>git</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://w517e-rabbit.github.com/blog/2013/04/10/git/" data-via="" data-counturl="http://w517e-rabbit.github.com/blog/2013/04/10/git/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/blog/2013/04/06/git/" title="Previous Post: Gitでブログ">&laquo; Gitでブログ</a>
+      
+      
+    </p>
+  </footer>
 </article>
 
 </div>
