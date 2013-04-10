@@ -4,7 +4,7 @@
   <title><![CDATA[Category: git | Tea Party Blog]]></title>
   <link href="http://w517e-rabbit.github.com/blog/categories/git/atom.xml" rel="self"/>
   <link href="http://w517e-rabbit.github.com/"/>
-  <updated>2013-04-10T23:46:07+09:00</updated>
+  <updated>2013-04-10T23:51:17+09:00</updated>
   <id>http://w517e-rabbit.github.com/</id>
   <author>
     <name><![CDATA[w517e rabbit]]></name>
@@ -14,7 +14,7 @@
 
   
   <entry>
-    <title type="html"><![CDATA[git]]></title>
+    <title type="html"><![CDATA[Gitブログのアップロード]]></title>
     <link href="http://w517e-rabbit.github.com/blog/2013/04/10/git/"/>
     <updated>2013-04-10T23:43:00+09:00</updated>
     <id>http://w517e-rabbit.github.com/blog/2013/04/10/git</id>
@@ -28,7 +28,10 @@
 <pre><code>$ rake setup_github_pages
 </code></pre>
 
-<p>リポジトリの入力を求められるので、適切に"git@github.com:your_username/your_username.github.com"の形式で入力する。</p>
+<p>リポジトリの入力を求められるので、適切に"git@github.com:your_username/your_username.github.com"の形式で入力する。
+なんか好きなリポジトリー名を使用できないかググってみたが、"git@github.com:your_username/your_username.github.com"は固定らしい。githubのリポジトリーも"your_username.github.com"にしないといけないようだ。</p>
+
+<p>ちょっとかっこわるい・・・。</p>
 
 <pre><code>$ rake generate
 $ rake deploy
